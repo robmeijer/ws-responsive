@@ -1,0 +1,60 @@
+/***** BODY STYLES *****/
+
+body {background: #EEE; font: 12px Arial, Helvetica, sans-serif;}
+h1 {font: bold 24px Arial, Helvetica, sans-serif; margin: 0 0 10px 0;}
+#container {background: #FFF; margin: 0 auto;}
+
+/***** HEADER STYLES *****/
+
+header {background: #AAA; margin: 0 auto 10px; padding: 10px;}
+
+/***** NAV STYLES *****/
+
+aside, nav {background: #CCC; min-height: 333px; padding: 10px; width: 130px;}
+aside {float: right;}
+nav {float: left;}
+
+/***** CONTENT STYLES *****/
+
+#content {background: #EEE; min-height: 333px; margin: 0 auto; padding: 10px;}
+#wrapper {margin-left: 10px; margin-right: 10px;}
+
+/***** FOOTER STYLES *****/
+
+footer {background: #AAA; margin: 10px auto 0; padding: 10px;}
+
+/***** RESPONSIVE STYLES *****/
+
+/* Portrait phone and down */
+header, footer {height: 30px;}
+#container, #content {width: auto;}
+nav, aside {display: none;}
+
+/* Landscape phone */
+@media (min-width: 533px) {
+	header, footer {height: 60px;}
+	nav {display: block;}
+	#wrapper {margin-left: 160px;}
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) {
+	header, footer {height: 100px;}
+	#container {width: 768px;}
+	#content {width: 578px;}
+}
+
+/* Landscape tablet and desktop */
+@media (min-width: 1006px) {
+	header {height: 130px;}
+	aside {display: block;}
+	#container {width: 960px;}
+	#content {width: 620px;}
+	#wrapper {margin-right: 160px;}
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+	#container {width: 1200px;}
+	#content {min-width: 800px;}
+}
